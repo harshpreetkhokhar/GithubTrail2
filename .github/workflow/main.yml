@@ -1,0 +1,24 @@
+name: My Workflow
+
+# This workflow runs when a push event occurs on the master branch
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  build:
+    # This job runs on a Ubuntu-latest runner
+    runs-on: ubuntu-latest
+
+    # Define variables
+    env:
+      MY_NAME: "Harsh Preet"
+      MY_EMAIL: "harsh.kaur@cloudeq.com"
+
+    steps:
+      - name: Print Name
+        run: echo "My name is $MY_NAME"
+
+      - name: Print Email
+        run: echo "My email is $MY_EMAIL"
