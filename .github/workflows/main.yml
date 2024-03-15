@@ -3,9 +3,6 @@ name: My Workflow
 # This workflow runs when a push event occurs on the master branch
 on:
   push:
-    branches:
-      - master
-
 jobs:
   build:
     # This job runs on a Ubuntu-latest runner
